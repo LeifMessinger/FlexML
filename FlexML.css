@@ -31,6 +31,12 @@ body {
 .flexAISpaceEvenly{
     align-items: space-evenly;
 }
+
+.flexSticky {
+	position: sticky;
+	align-self: flex-start;
+	top: 0;
+}
 /* I'm doing the rest of them, just give me a second. */
 
 /* Using !important is ugly, but these will be used on a per element basis, so it doesn't matter. */
