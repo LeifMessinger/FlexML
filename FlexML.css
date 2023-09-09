@@ -12,7 +12,7 @@ body {
 
 .flexRow {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .flexColumn {
     display: flex;
