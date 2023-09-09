@@ -1,0 +1,60 @@
+@import url('reset.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    /* I hate this. Chrome needs a value for the parent object's height and width. */
+    width: 100vw;
+    height: 100vh;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: column;
+}
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexJCSpaceBetween{
+    justify-content: space-between;
+}
+.flexJCSpaceEvenly{
+    justify-content: space-evenly;
+}
+.flexAISpaceBetween{
+    align-items: space-between;
+}
+.flexAISpaceEvenly{
+    align-items: space-evenly;
+}
+/* I'm doing the rest of them, just give me a second. */
+
+/* Using !important is ugly, but these will be used on a per element basis, so it doesn't matter. */
+[grow] {
+    flex-grow: 1 !important;
+    /* attr isn't supported by any browsers at the moment
+    flex-grow: attr(grow, 1);
+    */
+}
+[nogrow] {
+    flex-grow: 0 !important;
+    /* attr isn't supported by any browsers at the moment
+    flex-grow: attr(grow, 1);
+    */
+}
+[shrink] {
+    flex-shrink: 1 !important;
+    /* attr isn't supported by any browsers at the moment
+    flex-grow: attr(shrink, 1);
+    */
+}
+[noshrink] {
+    flex-shrink: 0 !important;
+    /* attr isn't supported by any browsers at the moment
+    flex-grow: attr(shrink, 1);
+    */
+}
