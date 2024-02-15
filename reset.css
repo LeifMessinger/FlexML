@@ -30,9 +30,11 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
+/* line-height inital looks wayy better for some reason, and I'm willing to bet it's better.
 body {
     line-height: 1;
 }
+*/
 ol, ul {
     list-style: none;
 }
