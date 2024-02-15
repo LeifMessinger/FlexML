@@ -36,7 +36,19 @@ body {
 	flex-direction: column;
 }
 
+[start] {
+	justify-content: start;
+}
 
+[between] {
+	justify-content: space-between;
+}
+
+[end] {
+	justify-content: end;
+}
+
+/* Classes for the weird ones don't get their own attributes */
 .flexJCSpaceBetween{
 	justify-content: space-between;
 }
@@ -81,4 +93,21 @@ body {
 	/* attr isn't supported by any browsers at the moment
 	flex-grow: attr(shrink, 1);
 	*/
+}
+
+/* pad acts as the div for the padding space in "space around"
+	In full FlexML, I'd imagine you could use this for 
+*/
+[pad] {
+	flex: 0 0 0;
+}
+[column] > [pad] {
+	width: 100%;
+}
+[row] > [pad] {
+	width: 100%;
+}
+/* In order for this trick to work in HTML, you have to make the parent flexbox justify-content: space-between */
+:has( [pad] ) {
+	justify-content: space-between;
 }
