@@ -107,6 +107,13 @@ body {
 [row] > [pad] {
 	width: 100%;
 }
+/* this trick is useful for html, so I'm gonna name it thicc */
+[column] > [thicc] {
+	width: 100%;
+}
+[row] > [thicc] {
+	width: 100%;
+}
 /* In order for this trick to work in HTML, you have to make the parent flexbox justify-content: space-between */
 :has( [pad] ) {
 	justify-content: space-between;
